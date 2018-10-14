@@ -33,7 +33,7 @@ width = 100%
 height = 27
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -42,11 +42,13 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 4
+; Compton will apply transparent borders to this unless fixed
+; setting size to zero for now
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 2
@@ -57,7 +59,8 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = pulseaudio memory cpu date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -261,7 +264,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = "%m/%d/%Y"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
@@ -416,8 +419,9 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 
+; i3wm does not honor these values, better served using i3-gaps to accomplish this
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini
