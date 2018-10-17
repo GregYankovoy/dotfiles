@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 if [ -e ~/.bashrc.aliases ] ; then
    source ~/.bashrc.aliases
 fi
+
 # >>> Added by cnchi installer
 BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/nano

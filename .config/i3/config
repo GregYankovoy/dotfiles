@@ -266,9 +266,6 @@ bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
 
 ## Autostart apps
 
-# Configure screens
-exec --no-startup-id ~/.screenlayout/triple-monitor.sh
-
 # Launch authentication agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
