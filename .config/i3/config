@@ -46,7 +46,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id rofi -show run -terminal termite
+bindsym $mod+d exec --no-startup-id rofi -run-list-command ". ~/.bashrc.aliases" -run-command "/bin/bash -i -c '{cmd}'" -show run
 
 # change focus
 bindsym $mod+j focus left
