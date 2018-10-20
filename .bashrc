@@ -15,6 +15,7 @@ fi
 # >>> Added by cnchi installer
 BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/nano
+PATH=$HOME/.npm/bin:$PATH
 
 # import wal colorscheme asynchronously
 (cat ~/.cache/wal/sequences &)
