@@ -229,7 +229,7 @@ client.background       $bg
 
 # floating windows
 for_window [class="Pavucontrol"] floating enable
-for_window [class="Kalu"] floating enable
+# for_window [class="Kalu"] floating enable
 
 ## Multimedia Keys
 
@@ -271,7 +271,7 @@ exec --no-startup-id "compton -cC"
 exec --no-startup-id nm-applet
 
 # Launch Kalu tray 
-exec --no-startup-id "sleep 2s && kalu"
+# exec --no-startup-id "sleep 2s && kalu"
 
 # Restore saved nitrogen wallpapers (multi monitor support)
 exec --no-startup-id "nitrogen --restore"
